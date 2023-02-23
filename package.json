@@ -1,8 +1,8 @@
 {
   "name": "curriculo",
   "version": "0.1.0",
-  "homepage": "https://Diego-de.github.io/Diego.github.io",
-  "private": true,
+  "homepage": "https://Diego-de.github.io/diego-page",
+  "private": false,
   "dependencies": {
     "-": "^0.0.1",
     "@emotion/react": "^11.10.5",
