@@ -1,0 +1,28 @@
+.nav{
+    height: 100vh;  
+}
+.navbutton{
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.navbutton:hover{
+  box-shadow: 0 0 10px #0aa8e6, 0 0 40px #0aa8e6, 0 0 70px #0aa8e6;
+}
+
+.perf{
+  padding-bottom: 35%;
+  width: 100%;
+
+}
+
+.perfbutt{
+  display: inline;
+}
+#perf1:hover{
+  box-shadow: 0 0 10px #0aa8e6, 0 0 40px #0aa8e6, 0 0 70px #0aa8e6;
+}
+
+

@@ -1,0 +1,253 @@
+
+.container{
+    color: #ffff;
+    height: 100%;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.page1{
+    background-color: #301C41;
+    padding: 100px;
+    padding-left:20% ;
+    text-align: center;
+    height: 65vh;
+}
+
+.page2{
+    background-color: #301C41;
+    padding: 100px;
+    padding-left:20% ;
+    text-align: center;
+    height: 60%;    
+}
+
+
+.page3{
+    background-color: #301C41;
+    padding: 100px;
+    padding-left:20% ;
+    text-align: center;
+    height: 40%;    
+}
+
+
+.page4{
+    background-color: #301C41;
+    padding: 100px;
+    padding-top: 25%;
+    padding-left:20% ;
+    text-align: center;
+    height: 70%;    
+}
+
+
+h1{
+    font-size: 100px;
+}
+
+.page1 p{
+    font-size: 40px;
+}
+
+.exp{
+    display: flex;
+    align-items: center;
+    background-color: #301C41;
+    justify-content: center;
+    border-bottom-color: aqua;
+    border-bottom-style:solid;
+    width: 100%;
+}
+
+.exp img{
+    width: 450px;
+    height: 500px;
+    padding-left: 170px;
+    padding-right:5%;
+}
+
+.exp ul{
+    text-align: justify;
+    font-size: 35px;
+    width: 20%;
+    list-style: none;
+    font-family:cursive;  
+}
+
+table{
+    border: 1px solid;
+    width: 100%;
+    font-size: 30px;
+}
+
+table thead{
+    background-color: #6F95FF;
+}
+table tbody{
+    font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .page1{
+     padding-left: 30%;
+    }
+    .page2{
+        padding-left: 30%;
+    }
+    .page3{
+        padding-left: 30%;
+    }
+
+    .exp img{
+        width: 400px;
+        height: 450px;
+    }
+    
+    .exp ul{
+        font-size: 25px;
+        width: 10%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .page1{
+     padding-left: 20%;
+    }
+    .page2{
+        padding-top: 30%;
+        padding-left: 20%;
+    }
+    .page3{
+        padding-left: 20%;
+    }
+
+    .exp img{
+        width: 350px;
+        height: 400px;
+    }
+    
+    .exp ul{
+        font-size: 25px;
+        width: 10%;
+    }
+
+    .home{
+        width: 115%;
+    }
+
+}
+
+@media screen and (max-width: 820px) {
+    .page1{
+     padding-left: 25%;
+    }
+    .page2{
+        padding-top: 30%;
+        padding-left: 25%;
+    }
+    .page3{
+        padding-left: 25%;
+    }
+
+    .exp img{
+        width: 350px;
+        height: 400px;
+    }
+    
+    .exp ul{
+        font-size: 25px;
+        width: 10%;
+    }
+
+    .home{
+        width: 150%;
+    }
+    h1{
+        font-size: 70px;
+    }
+
+    .page1 p{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .page1{
+     padding-left: 25%;
+    }
+    .page2{
+        padding-top: 30%;
+        padding-left: 25%;
+    }
+    .page3{
+        padding-left: 25%;
+    }
+
+    .exp img{
+        width: 350px;
+        height: 400px;
+    }
+    
+    .exp ul{
+        font-size: 25px;
+        width: 10%;
+    }
+
+    .home{
+        width: 160%;
+    }
+    h1{
+        font-size: 70px;
+    }
+
+    .page1 p{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .page1{
+     padding-left: 25%;
+    }
+    .page2{
+        padding-top: 30%;
+        padding-left: 25%;
+    }
+    .page3{
+        padding-left: 25%;
+    }
+
+    .exp img{
+        width: 350px;
+        height: 400px;
+    }
+    
+    .exp ul{
+        font-size: 25px;
+        width: 10%;
+    }
+
+    .home{
+        width: 300%;
+    }
+    h1{
+        font-size: 70px;
+    }
+
+    .page1 p{
+        font-size: 30px;
+    }
+
+}
+
+
