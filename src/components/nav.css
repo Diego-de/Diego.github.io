@@ -12,17 +12,65 @@
   box-shadow: 0 0 10px #0aa8e6, 0 0 40px #0aa8e6, 0 0 70px #0aa8e6;
 }
 
+
+.Menu{
+  background-color: #1C0B2B;
+  Color : "#FFFFFF";
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 .perf{
   padding-bottom: 35%;
   width: 100%;
-
 }
 
 .perfbutt{
   display: inline;
 }
+
 #perf1:hover{
   box-shadow: 0 0 10px #0aa8e6, 0 0 40px #0aa8e6, 0 0 70px #0aa8e6;
 }
+
+
+.perfDevice{
+  display: flex;
+  width: 100%;
+  background-color: #1C0B2B;
+
+}
+
+.perfDevice li{
+  font-size: 25px;
+  list-style: none;
+}
+
+
+
+.perfDevice .opçoes{
+  display: flex;
+  margin-right: 5%;
+  margin-left: 20%;
+  color: antiquewhite;
+}
+
+
+.perfDevice .social{
+  display: flex;
+}
+
+.perfDevice .opçoes li{
+  margin: 20px;
+}
+
+.perfDevice .social li{
+  margin: 20px;
+}
+
+
+
 
 

@@ -8,92 +8,93 @@ import "aos/dist/aos.css"
 import Aos from 'aos';
 import { useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
-import TextField from '@mui/material/TextField';
-import Box from '@mui/material/Box';
-import TextareaAutosize from '@mui/base/TextareaAutosize';
 
+const Page = () => {
 
-const Page = () =>{
-    
-    useEffect(()=>{
+    useEffect(() => {
         Aos.init({});
-    },[]);
+    }, []);
 
 
     const GeralList = ['Front-End', 'Back-End', 'Desenvolvimento Web', 'Metodologia Ageis', 'Git e Github']
 
-    const listGeral = GeralList.map((GeralList)=>{   
-        return <li>{GeralList}</li>;   
-    });   
+    const listGeral = GeralList.map((GeralList) => {
+        return <li>{GeralList}</li>;
+    });
 
 
-    const Linguagem = ['Java','JavaScript','Python','Html/Css','Sql']
+    const Linguagem = ['Java', 'JavaScript', 'Python', 'Html/Css', 'Sql']
 
-    const listLing = Linguagem.map((Linguagem)=>{   
-        return <li>{Linguagem}</li>;   
-    });   
+    const listLing = Linguagem.map((Linguagem) => {
+        return <li>{Linguagem}</li>;
+    });
 
-    const softSkill = ['Comunicativo','Trabalho em equipe.','Bom gerenciamento de tempo.','Sempre aberto a novas ferramentas linguagens.']
-    
-    const listSoft = softSkill.map((softSkill)=>{   
-        return <li>{softSkill}</li>;   
-    });   
+    const softSkill = ['Comunicativo', 'Trabalho em equipe.', 'Bom gerenciamento de tempo.', 'Sempre aberto a novas ferramentas linguagens.']
 
-    const Ferramenta = ['React','UI kits ','Spring Boot','Vscode']
+    const listSoft = softSkill.map((softSkill) => {
+        return <li>{softSkill}</li>;
+    });
 
-    const listFerr = Ferramenta.map((Ferramenta)=>{   
-        return <li>{Ferramenta}</li>;   
-    });   
+    const Ferramenta = ['React', 'UI kits ', 'Spring Boot', 'Vscode']
 
-  
+    const listFerr = Ferramenta.map((Ferramenta) => {
+        return <li>{Ferramenta}</li>;
+    });
 
 
-    return(
-        <section className='container' >
+
+
+    return (
+        <div className='container' >
             <div className='page1'>
-                <h1>BIOGRAFIA</h1>
-                <p>
-                    Atualmente sou recém formado no curso de Sistemas
-                    para internet na Universidade Catolica de pernambuco,
-                    onde desenvolvi experiencias e aprendizados cujo objetivo
-                    foi me tornar um desenvolvedor web e mobile.
-                </p>
-                <p>
-                    Este site tem o objetivo de mostrar alguns dos meus 
-                    aprendizados no mundo da programação web, de modo 
-                    onde eu possa me apresentar para possiveis contratantes
-                </p>
+                <div style={{ width: '70%', alignSelf: 'center' }}>
+                    <h1>BIOGRAFIA</h1>
+                    <p>
+                        Atualmente sou recém formado no curso de Sistemas
+                        para internet na Universidade Catolica de pernambuco,
+                        onde desenvolvi experiencias e aprendizados cujo objetivo
+                        foi me tornar um desenvolvedor web e mobile.
+                    </p>
+                    <p>
+                        Este site tem o objetivo de mostrar alguns dos meus
+                        aprendizados no mundo da programação web, de modo
+                        onde eu possa me apresentar para possiveis contratantes
+                    </p>
+                </div>
             </div>
 
             <div className='page2'>
-                <h1>Experiencia</h1>
+                <div>
+                    <h1>Experiencia</h1>
 
-                <div data-aos="fade-right" Class='exp'> 
-                    <ul>{listGeral}</ul>
-                    <img src={Geral}></img>
+                    <div data-aos="fade-right" Class='exp'>
+                        <ul>{listGeral}</ul>
+                        <img src={Geral}></img>
+                    </div>
+
+                    <div data-aos="fade-left" Class='exp'>
+                        <img src={Ling}></img>
+                        <ul>{listLing}</ul>
+                    </div>
+
+                    <div data-aos="fade-right" Class='exp'>
+                        <ul>{listFerr}</ul>
+                        <img src={ferr}></img>
+                    </div>
+
+                    <div data-aos="fade-left" Class='exp'>
+                        <img src={Soft}></img>
+                        <ul>{listSoft}</ul>
+                    </div>
+
+
                 </div>
-
-                <div data-aos="fade-left" Class='exp'>
-                    <img src={Ling}></img>
-                    <ul>{listLing}</ul>   
-                </div>
-
-                <div data-aos="fade-right" Class='exp'>
-                    <ul>{listFerr}</ul>
-                    <img src={ferr}></img>
-                </div>
-
-                <div data-aos="fade-left"  Class='exp'>
-                    <img src={Soft}></img>
-                    <ul>{listSoft}</ul>  
-                </div>
-
-
             </div>
 
 
             <div className='page3'>
-                <h1>FORMAÇÃO</h1>   
+                <div>
+                <h1>FORMAÇÃO</h1>
                 <Table hover responsive>
                     <thead  >
                         <tr>
@@ -103,8 +104,8 @@ const Page = () =>{
                             <th>Ano Inicial</th>
                             <th>Ano Final</th>
                         </tr>
-                    </thead>  
-                    <tbody> 
+                    </thead>
+                    <tbody>
                         <tr>
                             <td>1</td>
                             <td>Universidade Cátolica de pernambuco</td>
@@ -135,12 +136,13 @@ const Page = () =>{
                             <td>2021</td>
                             <td>2021</td>
                         </tr>
-                    </tbody>     
+                    </tbody>
                 </Table>
-                
+
+                </div>
             </div>
 
-        </section>
+            </div>
     );
 }
 
