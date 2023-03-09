@@ -9,6 +9,8 @@ import Aos from 'aos';
 import { useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 
+import { Container } from 'react-bootstrap';
+
 const Page = () => {
 
     useEffect(() => {
@@ -45,7 +47,8 @@ const Page = () => {
 
 
     return (
-        <div className='container' >
+        <Container>
+            <div className='header'>
             <div className='page1'>
                 <div style={{ width: '70%', alignSelf: 'center' }}>
                     <h1>BIOGRAFIA</h1>
@@ -143,6 +146,7 @@ const Page = () => {
             </div>
 
             </div>
+        </Container>
     );
 }
 

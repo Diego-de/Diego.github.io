@@ -2,7 +2,6 @@ import * as React from 'react';
 import "../components/nav.css";
 import { Link as LinkScroll } from 'react-scroll'
 import Button from "@mui/material/Button";
-
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -10,6 +9,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const NavbarDevice = () => {
     return (
         <div className="perfDevice">
+
             <div className="opçoes">
                 <li className='navbutton'><LinkScroll className="btn1" to="page1" spy={true} smooth={true} offset={50} duration={500} >BIOGRAFIA</LinkScroll></li>
                 <li className='navbutton'><LinkScroll className="btn1" to="page2" spy={true} smooth={true} offset={50} duration={500} >EXPERIÊNCIAS</LinkScroll></li>

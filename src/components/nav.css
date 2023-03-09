@@ -1,6 +1,4 @@
-.nav{
-    height: 100vh;  
-}
+
 .navbutton{
   padding: 10px;
   margin-top: 5px;
@@ -40,11 +38,10 @@
   display: flex;
   width: 100%;
   background-color: #1C0B2B;
-
 }
 
 .perfDevice li{
-  font-size: 25px;
+  font-size: 1.75rem;
   list-style: none;
 }
 
@@ -60,15 +57,11 @@
 
 .perfDevice .social{
   display: flex;
+  width: 100%;
 }
 
-.perfDevice .opçoes li{
-  margin: 20px;
-}
 
-.perfDevice .social li{
-  margin: 20px;
-}
+
 
 
 
