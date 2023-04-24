@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/diego-page/static/css/main.33440d44.css",
-    "main.js": "/diego-page/static/js/main.b3b65fc2.js",
+    "main.js": "/diego-page/static/js/main.2a404356.js",
     "static/js/787.3b86ad0b.chunk.js": "/diego-page/static/js/787.3b86ad0b.chunk.js",
     "static/media/siteLogin.png": "/diego-page/static/media/siteLogin.aa9e7bbce463ca4f69da.png",
     "static/media/foto.svg": "/diego-page/static/media/foto.579a517f0b3aaa99e0dc8c9e2caac233.svg",
@@ -13,11 +13,11 @@
     "static/media/Geral.svg": "/diego-page/static/media/Geral.59c6f21a6cbe10d46b32b9bb0212aa72.svg",
     "index.html": "/diego-page/index.html",
     "main.33440d44.css.map": "/diego-page/static/css/main.33440d44.css.map",
-    "main.b3b65fc2.js.map": "/diego-page/static/js/main.b3b65fc2.js.map",
+    "main.2a404356.js.map": "/diego-page/static/js/main.2a404356.js.map",
     "787.3b86ad0b.chunk.js.map": "/diego-page/static/js/787.3b86ad0b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.33440d44.css",
-    "static/js/main.b3b65fc2.js"
+    "static/js/main.2a404356.js"
   ]
 }
