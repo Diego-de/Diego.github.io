@@ -1,20 +1,23 @@
 {
   "files": {
-    "main.css": "/diego-page/static/css/main.f897ad48.css",
-    "main.js": "/diego-page/static/js/main.add499d6.js",
+    "main.css": "/diego-page/static/css/main.33440d44.css",
+    "main.js": "/diego-page/static/js/main.b3b65fc2.js",
     "static/js/787.3b86ad0b.chunk.js": "/diego-page/static/js/787.3b86ad0b.chunk.js",
+    "static/media/siteLogin.png": "/diego-page/static/media/siteLogin.aa9e7bbce463ca4f69da.png",
     "static/media/foto.svg": "/diego-page/static/media/foto.579a517f0b3aaa99e0dc8c9e2caac233.svg",
+    "static/media/curriPrint.png": "/diego-page/static/media/curriPrint.03f99cffe86e754e737b.png",
+    "static/media/backend.png": "/diego-page/static/media/backend.7fe95e37dc3183d18818.png",
     "static/media/lingua.svg": "/diego-page/static/media/lingua.602f64d6de43e49fb5aa87437ab3f573.svg",
     "static/media/Ferramenta.svg": "/diego-page/static/media/Ferramenta.4acf08c8ae806d3f0c7496612e42d4d4.svg",
     "static/media/soft.svg": "/diego-page/static/media/soft.76712924d686b93f7bc2050e8cdca2ca.svg",
     "static/media/Geral.svg": "/diego-page/static/media/Geral.59c6f21a6cbe10d46b32b9bb0212aa72.svg",
     "index.html": "/diego-page/index.html",
-    "main.f897ad48.css.map": "/diego-page/static/css/main.f897ad48.css.map",
-    "main.add499d6.js.map": "/diego-page/static/js/main.add499d6.js.map",
+    "main.33440d44.css.map": "/diego-page/static/css/main.33440d44.css.map",
+    "main.b3b65fc2.js.map": "/diego-page/static/js/main.b3b65fc2.js.map",
     "787.3b86ad0b.chunk.js.map": "/diego-page/static/js/787.3b86ad0b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f897ad48.css",
-    "static/js/main.add499d6.js"
+    "static/css/main.33440d44.css",
+    "static/js/main.b3b65fc2.js"
   ]
 }
