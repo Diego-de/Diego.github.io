@@ -14,6 +14,7 @@ const NavbarDevice = () => {
                 <li className='navbutton'><LinkScroll className="btn1" to="page1" spy={true} smooth={true} offset={50} duration={500} >BIOGRAFIA</LinkScroll></li>
                 <li className='navbutton'><LinkScroll className="btn1" to="page2" spy={true} smooth={true} offset={50} duration={500} >EXPERIÊNCIAS</LinkScroll></li>
                 <li className='navbutton'><LinkScroll className="btn1" to="page3" spy={true} smooth={true} offset={50} duration={500} >FORMAÇÃO</LinkScroll></li>
+                <li className='navbutton'><LinkScroll className="btn1" to="page4" spy={true} smooth={true} offset={50} duration={500} >PORTIFÓLIO</LinkScroll></li>
             </div>
 
             <div className="social">
