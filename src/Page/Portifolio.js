@@ -6,7 +6,7 @@ const portifólio = [
     {
         Title: 'Esta Pagina',
         Image: site1Perfil,
-        Link: 'https://github.com/Diego-de/LoginCadastroReact/tree/FrontEnd'
+        Link: 'https://github.com/Diego-de/diego-page/tree/main'
     }, 
     {
         Title: 'Login e Cadastro Frontend',
