@@ -1,17 +1,21 @@
-import site1Front from '../assets/siteLogin.png';
-import site1Back from '../assets/backend.png';
+import site2Front from '../assets/siteLogin.png';
+import site2Back from '../assets/backend.png';
+import site1Perfil from '../assets/curriPrint.png'
 
 const portifólio = [
     {
-        id:1,
-        Title: 'Login e Cadastro Frontend',
-        Image: site1Front,
+        Title: 'Esta Pagina',
+        Image: site1Perfil,
         Link: 'https://github.com/Diego-de/LoginCadastroReact/tree/FrontEnd'
     }, 
     {
-        id:1,
+        Title: 'Login e Cadastro Frontend',
+        Image: site2Front,
+        Link: 'https://github.com/Diego-de/LoginCadastroReact/tree/FrontEnd'
+    }, 
+    {
         Title: 'Login e Cadastro Backend',
-        Image: site1Back,
+        Image: site2Back,
         Link: 'https://github.com/Diego-de/LoginCadastroReact/tree/BackEnd'
     },   
      
