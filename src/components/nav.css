@@ -4,15 +4,17 @@
   margin-top: 5px;
   font-size: 30px;
   cursor: pointer;
+
 }
 
 .navbutton:hover{
-  box-shadow: 0 0 10px #0aa8e6, 0 0 40px #0aa8e6, 0 0 70px #0aa8e6;
+  text-shadow: 0 0 10px #0aa8e6, 0 0 20px #0aa8e6, 0 0 30px #0aa8e6;
 }
 
 
 .Menu{
-  background-color: #1C0B2B;
+  background-color: #08030c;
+  box-shadow: 0 0 10px #0aa8e6, 0 0 20px #0aa8e6, 0 0 30px #0aa8e6;
   Color : "#FFFFFF";
   height: 100%;
   width: 100%;
@@ -26,11 +28,25 @@
 }
 
 .perfbutt{
-  display: inline;
+  display: flex;
 }
 
+.perfbutt .git :hover{
+  box-shadow: 0 0 10px #0aa8e6, 0 0 20px #0aa8e6, 0 0 30px #0aa8e6;
+}
+
+.perfbutt .link :hover{
+  box-shadow: 0 0 10px #0aa8e6, 0 0 20px #0aa8e6, 0 0 30px #0aa8e6;
+}
+
+.perfbutt :nth-child(1):hover{
+  border: 0;
+  box-shadow: 0 0 10px #0aa8e6, 0 0 20px #0aa8e6, 0 0 30px #0aa8e6;
+}
+
+
 #perf1:hover{
-  box-shadow: 0 0 10px #0aa8e6, 0 0 40px #0aa8e6, 0 0 70px #0aa8e6;
+  text-shadow: 0 0 10px #0aa8e6, 0 0 40px #0aa8e6, 0 0 70px #0aa8e6;
 }
 
 
@@ -44,18 +60,23 @@
 }
 
 .perfDevice li{
-  font-size: 1.75rem;
+  font-size: 1.50rem;
   list-style: none;
 }
 
 
-
 .perfDevice .opçoes{
-  display: flex;
   margin-right: 5%;
-  margin-left: 20%;
+  margin-left: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.perfDevice .opçoes .optList{ 
+  display: flex;
   color: antiquewhite;
 }
+
 
 
 .perfDevice .social{
@@ -63,10 +84,64 @@
   width: 100%;
 }
 
+.perfDevice .hamb{
+  display: none;
+}
 
 
 
 
+@media screen and (max-width: 768px){
+  .perfDevice .hamb{
+    display: block;
+  }
+  
+  .perfDevice{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 150px;
+  }
+
+  .perfDevice .device{
+    display: flex;
+    width: 85%;
+   
+  }
+
+  .menuButton{
+    z-index: 100  ;
+  }
+
+  .perfDevice .opçoes{
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    text-align: center;
+    justify-content: end;
+  }
+
+  
+.perfDevice .opçoes .optList{ 
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: #3757e748;
+  text-shadow: 0 0 10px #0aa8e6, 0 0 40px #0aa8e6, 0 0 70px #0aa8e6;
+}
+
+
+.optList::after{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-bottom: 21px solid #3758e7;
+  top: -20px; /*localização. Experimente alterar para 'bottom'*/
+  left: 88.8%;
+}
+
+}
 
 
 

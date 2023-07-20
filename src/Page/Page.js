@@ -6,7 +6,7 @@ import Soft from '../assets/soft.svg'
 import ferr from '../assets/Ferramenta.svg'
 import "aos/dist/aos.css"
 import Aos from 'aos';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Table from 'react-bootstrap/Table';
 import Portfolio from './Portifolio'
 
@@ -20,34 +20,47 @@ const Page = () => {
     }, []);
 
 
-    const GeralList = ['Front-End', 'Back-End', 'Desenvolvimento Web', 'Metodologia Ageis', 'Git e Github']
+    const GeralList = ['Front-End', 'Back-End', 'Desenvolvimento Web', 'Metodologia Ágeis', 'Git e Github'];
+    const Linguagem = ['Java', 'JavaScript', 'Python', 'HTML/CSS', 'SQL'];
+    const softSkill = ['Comunicativo', 'Trabalho em equipe', 'Bom gerenciamento de tempo'];
+    const Ferramenta = ['React', 'UI kits', 'Spring Boot', 'VSCode'];
 
-    const listGeral = GeralList.map((GeralList) => {
-        return <li>{GeralList}</li>;
-    });
+    const [currentIndex, setCurrentIndex] = useState(0);
 
+    const handleNext = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % 4);
+    };
 
-    const Linguagem = ['Java', 'JavaScript', 'Python', 'Html/Css', 'Sql']
+    const handlePrev = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + 4) % 4);
+    };
 
-    const listLing = Linguagem.map((Linguagem) => {
-        return <li>{Linguagem}</li>;
-    });
+    const carouselContent = [
+        {
+            title: 'Experiência Geral',
+            list: GeralList,
+            image: Geral
+        },
+        {
+            title: 'Linguagens',
+            list: Linguagem,
+            image: Ling
+        },
+        {
+            title: 'Ferramentas',
+            list: Ferramenta,
+            image: ferr
+        },
+        {
+            title: 'Soft Skills',
+            list: softSkill,
+            image: Soft
+        }
+    ];
 
-    const softSkill = ['Comunicativo', 'Trabalho em equipe.', 'Bom gerenciamento de tempo.', 'Sempre aberto a novas ferramentas linguagens.']
+    const currentContent = carouselContent[currentIndex];
 
-    const listSoft = softSkill.map((softSkill) => {
-        return <li>{softSkill}</li>;
-    });
-
-    const Ferramenta = ['React', 'UI kits ', 'Spring Boot', 'Vscode']
-
-    const listFerr = Ferramenta.map((Ferramenta) => {
-        return <li>{Ferramenta}</li>;
-    });
-
-
-
-
+    const listItems = currentContent.list.map((item, index) => <li key={index}>{item}</li>);
 
 
 
@@ -72,30 +85,22 @@ const Page = () => {
                 </div>
 
                 <div className='page2'>
-                    <div>
-                        <h1>Experiencia</h1>
+                    <div className='carousel-container'>
+                        <h1>{currentContent.title}</h1>
 
-                        <div data-aos="fade-right" Class='exp'>
-                            <ul>{listGeral}</ul>
-                            <img src={Geral}></img>
+                        <div data-aos="fade-right" className='exp'>
+                            <div className='ulE'>
+                                <ul><li>{listItems}</li></ul>
+                            </div>
+                            <div className='imgE'>
+                                <img src={currentContent.image} alt='image' />
+                            </div>
                         </div>
 
-                        <div data-aos="fade-left" Class='exp'>
-                            <img src={Ling}></img>
-                            <ul>{listLing}</ul>
+                        <div className='btn'>
+                            <button className='carousel-button' onClick={handlePrev}>&lt;</button>
+                            <button className='carousel-button' onClick={handleNext}>&gt;</button>
                         </div>
-
-                        <div data-aos="fade-right" Class='exp'>
-                            <ul>{listFerr}</ul>
-                            <img src={ferr}></img>
-                        </div>
-
-                        <div data-aos="fade-left" Class='exp'>
-                            <img src={Soft}></img>
-                            <ul>{listSoft}</ul>
-                        </div>
-
-
                     </div>
                 </div>
 
@@ -158,13 +163,15 @@ const Page = () => {
                                 <div><h5>{item.Title}</h5></div>
                                 <div><img src={item.Image}></img></div>
                                 <div className='btnPort'>
-                                    <a
-                                        href={item.Link} target='_blank'
-                                    >
-                                        <button className='btnPort2'>
-                                            Códigos
-                                        </button>
-                                    </a></div>
+                                    <a href={item.Link} target='_blank' >
+                                        <button className='btnPort2'> Códigos</button>
+                                    </a>
+                                    {item.Link2 &&(
+                                    <a href={item.Link2} target='_blank' >
+                                        <button className='btnPort2'>Site</button>
+                                    </a>
+                                    )}
+                                </div>
                             </div>
                         )}
                     </div>

@@ -10,24 +10,22 @@ function App() {
   return (
     <>
       <div className='home'>
-        
-        <div className='tela1'>
-        <BrowserRouter> 
-            <Navbar/>
+
+        <div className='divisor'>
+          <BrowserRouter>
+            <div className='pag1'>
+              <div className='tela1'>
+                <Navbar />
+              </div>
+              <div className='menu-icon'>
+                  <NavbarDevice />
+              </div>
+            </div>
+            <div className='tela2'>
+              <Page />
+            </div>
           </BrowserRouter>
         </div>
-
-        <div className='menu-icon'>
-          <BrowserRouter>
-            <NavbarDevice/>
-          </BrowserRouter> 
-        </div>
-
-          <div className='tela2'>
-          <BrowserRouter>
-            <Page/>
-          </BrowserRouter> 
-          </div>
       </div>
     </>
   );

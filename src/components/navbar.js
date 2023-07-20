@@ -11,22 +11,26 @@ import "../components/nav.css";
 import perfil from "./../assets/foto.svg";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-
+import cv from '../assets/cv.svg'
+import DownloadCv from '../assets/diego.pdf'
 
 import Button from "@mui/material/Button";
+
 
 //
 
 const Navbar = () => {
+
+
     return (
-        <div className='container'> 
+        <div className='container'>
             <div className='Menu'>
                 <Toolbar sx={{ justifyContent: 'center' }} >
                     <MenuList>
-                        <div style={{color:'#ffff', width:'80%'}}>
+                        <div style={{ color: '#ffff', width: '80%' }}>
                             <div className="perf" >
                                 <MenuList >
-                                    <CardMedia component="img" sx={{ pt: "20%", borderRadius: "20%" }} image={perfil}/>
+                                    <CardMedia component="img" sx={{ pt: "20%", borderRadius: "20%" }} image={perfil} />
                                     <Typography align="center">Diego Gomes de souza</Typography>
                                 </MenuList>
                             </div>
@@ -39,13 +43,16 @@ const Navbar = () => {
                                 </MenuList>
                             </div>
                             <div className="perfbutt" >
-                                    <Button href='https://github.com/Diego-de' id='perf1' target="_blank">
-                                        <GitHubIcon sx={{ fontSize: 80, color: "white" }} />
-                                    </Button>
+                                <Button href='https://github.com/Diego-de' id='perf1' target="_blank" >
+                                    <GitHubIcon sx={{ fontSize: 80, color: "white" }} className='git'/>
+                                </Button>
 
-                                    <Button href='https://www.linkedin.com/in/diego-gomes-55240b135' id='perf1' target="_blank">
-                                        <LinkedInIcon sx={{ fontSize: 80, color: "white" }} />
-                                    </Button>  
+                                <Button href='https://www.linkedin.com/in/diego-gomes-55240b135' id='perf1' target="_blank">
+                                    <LinkedInIcon sx={{ fontSize: 80, color: "white" }} className='git'/>
+                                </Button>
+                                <Button id='perf1' target="_blank" href={DownloadCv} download>
+                                    <img  src={cv} style={{width:'65px' , height:'75px', backgroundColor:'white', borderRadius:'15px'}} alt='Curriculo' ></img>
+                                </Button>
                             </div>
                         </div>
                     </MenuList>
